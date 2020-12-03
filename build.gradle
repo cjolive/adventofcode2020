@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id "com.diffplug.spotless" version "5.8.2"
+    id "io.freefair.lombok" version "5.3.0"
 }
 
 group 'uk.cjolive'
@@ -14,11 +15,16 @@ repositories {
 
 dependencies {
     compile 'com.google.googlejavaformat:google-java-format:1.9'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 }
 
 spotless {
     java {
         googleJavaFormat()
     }
+}
+
+test {
+    useJUnitPlatform()
 }
