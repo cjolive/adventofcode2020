@@ -3,6 +3,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import day1.Day1;
 import day2.Day2;
 import day3.Day3;
+import day4.Day4;
 import org.junit.jupiter.api.Test;
 
 public class Tests {
@@ -26,5 +27,12 @@ public class Tests {
     Day3 day = new Day3();
     assertEquals(292, day.task1());
     assertEquals(9354744432L, day.task2());
+  }
+
+  @Test
+  public void testDay4() {
+    Day4 day = new Day4();
+    assertEquals(226, day.task1());
+    assertEquals(160, day.task2());
   }
 }
