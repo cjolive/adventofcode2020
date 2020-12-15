@@ -4,6 +4,7 @@ import day1.Day1;
 import day2.Day2;
 import day3.Day3;
 import day4.Day4;
+import day5.Day5;
 import org.junit.jupiter.api.Test;
 
 public class Tests {
@@ -34,5 +35,15 @@ public class Tests {
     Day4 day = new Day4();
     assertEquals(226, day.task1());
     assertEquals(160, day.task2());
+  }
+
+  @Test
+  public void testDay5() {
+    Day5 day5 = new Day5();
+    //    assertEquals(567, day5.calculateSeat("BFFFBBFRRR"));
+    //    assertEquals(119, day5.calculateSeat("FFFBBBFRRR"));
+    //    assertEquals(820, day5.calculateSeat("BBFFBBFRLL"));
+    assertEquals(955, day5.task1());
+    assertEquals(569, day5.task2());
   }
 }
