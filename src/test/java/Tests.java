@@ -5,6 +5,7 @@ import day2.Day2;
 import day3.Day3;
 import day4.Day4;
 import day5.Day5;
+import day6.Day6;
 import org.junit.jupiter.api.Test;
 
 public class Tests {
@@ -45,5 +46,12 @@ public class Tests {
     //    assertEquals(820, day5.calculateSeat("BBFFBBFRLL"));
     assertEquals(955, day5.task1());
     assertEquals(569, day5.task2());
+  }
+
+  @Test
+  public void testDay6() {
+    Day6 day = new Day6();
+    assertEquals(6680, day.task1());
+    assertEquals(3117, day.task2());
   }
 }
